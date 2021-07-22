@@ -1,4 +1,4 @@
-def generate_message():  #generates success message
+def success():  #generates success message
     from random import randint as r
     responces = [
         'You Genius', 'Play it again, Sam', 'Darn', 'no need to show off',
