@@ -3,9 +3,17 @@
     "leaderboard.py": [
       {
         "id": "17e54664-2d32-4a1f-96a8-bcea4a8e0c13",
-        "line": 9,
-        "version": 254,
-        "index": 247
+        "line": 10,
+        "version": 378,
+        "index": 270
+      }
+    ],
+    "main.py": [
+      {
+        "id": "ec89b8ef-1e28-43e7-a45c-263bb0dd6dd0",
+        "line": 70,
+        "version": 12114,
+        "index": 2250
       }
     ]
   }

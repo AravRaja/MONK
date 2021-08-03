@@ -2,6 +2,15 @@ class _24:
     def __init__(self):
         self.solution = '6*4'
         self.numbers = [6, 4, 1, 1]
+        self.state_24 = False
+        self.state_grind = False
+        
+        self.score = 0
+        self.grind_channel = None
+        self.start_time = 0
+        self.previous_time = 0
+        self.new_time = 0
+        self.solution_state = False
 
     def equal(self, *numbers):  #24 Game Generator
         from operator import add, sub, mul
@@ -37,6 +46,7 @@ class _24:
                 return 'Finished Generation'
 
     def check(self, string):  #checks if user solution is valid
+        string = string.content
         target = self.numbers
         final = ''.join(['*' if i == 'x' else i for i in string])
         allowed = list('1234567890()*+-/')
@@ -56,7 +66,10 @@ class _24:
                 if sorted(number_checker) == sorted(target):
                     return False
                 else:
+                  if string != '24':
                     return 'Make sure to use all the numbers'
+                  else:
+                    return 'no'
             return f'This equals {eval(final)} :('
         except:
             return 'Make sure your brackets line up'

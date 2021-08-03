@@ -78,6 +78,18 @@ python-versions = "*"
 "discord.py" = ">=1.0.1"
 
 [[package]]
+name = "discord-components"
+version = "1.1.4"
+description = "An unofficial library for discord components."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+aiohttp = "*"
+"discord.py" = "*"
+
+[[package]]
 name = "discord.py"
 version = "1.7.2"
 description = "A Python wrapper for the Discord API"
@@ -215,7 +227,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "702911c53b6da0dcaaf5c775b9bf3b74b6eaacb7708b876a3eadc72ffe5a33bc"
+content-hash = "3ff3a6e48b34757234ed9f87420ea76fe7c07eb5bda8ac4fb9a8df7bd438ce06"
 
 [metadata.files]
 aiohttp = [
@@ -280,6 +292,10 @@ colorama = [
 discord = [
     {file = "discord-1.0.1-py3-none-any.whl", hash = "sha256:9d4debb4a37845543bd4b92cb195bc53a302797333e768e70344222857ff1559"},
     {file = "discord-1.0.1.tar.gz", hash = "sha256:ff6653655e342e7721dfb3f10421345fd852c2a33f2cca912b1c39b3778a9429"},
+]
+discord-components = [
+    {file = "discord_components-1.1.4-py3-none-any.whl", hash = "sha256:701c49895c6d69060d79a436ed3ba2bfbb9e92457a4548a5bd14daa7bcbb9fff"},
+    {file = "discord_components-1.1.4.tar.gz", hash = "sha256:11768d28bf3b7ad20f378328e0f02e3322579167d97ae672da59c09d31bc61e7"},
 ]
 "discord.py" = [
     {file = "discord.py-1.7.2-py3-none-any.whl", hash = "sha256:f179db299c949a8cf0a12c1b1b94d0da9a18e088857154d93ae5ab1d807ec61d"},
